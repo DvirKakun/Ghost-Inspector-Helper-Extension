@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Ghost Inspector Helper",
+  "version": "1.0",
+  "description": "Auto-complete {{}} for Ghost Inspector variables",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.ghostinspector.com/*",
+        "*://ghostinspector.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
